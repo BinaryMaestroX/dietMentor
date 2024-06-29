@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('luxa.org-opacity-changed-nuts-arrangement-with-copy-space\ \(2\).jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+}
+
+nav li {
+    font-size: 20px;
+}
+
+nav a {
+    height: 100%;
+    padding: 10px 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: gray;
+}
+
+nav li:first-child {
+    margin-right: 1000px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(2px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menuButton {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menuButton {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+.mainProfile {
+    height: 750px;
+    width: 80%;
+    max-width: 1200px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.624);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    border: solid rgb(255, 255, 255) 3px;
+}
+
+.pbody1 {
+    width: 30%;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.pbody1 h1 {
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.pbody1 img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.pbody1 p {
+    color: white;
+    padding-bottom: 10px;
+}
+
+#btn1 {
+    background-color: #e3362c;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.pbody1 label {
+    display: block;
+    background: #e3362c;
+    color: #fff;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.pbody1 input[type="file"] {
+    display: none;
+}
+
+.pbody2 {
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+label {
+    margin-top: 10px;
+    color: #ffffff;
+    text-align: left;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="date"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ffffff46;
+    color: #fff;
+}
+
+textarea {
+    height: 60px;
+    resize: none;
+}
+
+input[type="range"] {
+    width: 80%;
+    margin-top: 5px;
+}
+
+output {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button[type="reset"] {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+

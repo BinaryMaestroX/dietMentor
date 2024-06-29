@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../../css/profile.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="Profile.html">Menu</a></li>
+            <li><a href="#">Plan</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html" onclick="logout()">Logout</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Healthy Diet</a></li>
+            <li class="hideOnMobile"><a href="Profile.html">Menu</a></li>
+            <li class="hideOnMobile"><a href="#">Plan</a></li>
+            <li class="hideOnMobile"><a href="#">BMI</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="login.html"  onclick="logout()">Logout</a></li>
+            <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <div class="mainProfile">
+        <div class="pbody1">
+            <h1>Username</h1>
+            <img src="../../Images/Default_Profile_picture.jpeg" id="profile-pic">
+            <p>@Username</p>
+            <button id="btn1"><label for="input-file">Update image</label></button>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+        </div>
+        <div class="pbody2">
+            <form>
+                <h2>User Profile</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <label for="mobile">Mobile No:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+    
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+    
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+    
+                <label for="height">Height (cm):</label>
+                <input type="range" id="height" name="height" min="100" max="250" value="175" oninput="document.getElementById('heightOutput').value = this.value">
+                <output id="heightOutput">175</output> cm
+    
+                <label for="weight">Weight (kg):</label>
+                <input type="range" id="weight" name="weight" min="30" max="150" value="70" oninput="document.getElementById('weightOutput').value = this.value">
+                <output id="weightOutput">70</output> kg
+    
+                <div class="buttons">
+                    <button type="submit">Save</button>
+                    <button type="reset">Reset</button>
+                    <button type="button" onclick="changeProfile()">Change Profile</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../../JS/profile.js"></script>
+</body>
+</html>
